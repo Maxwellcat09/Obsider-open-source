@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+
+    <title>Obsider</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <img
+      src="https://cdn.glitch.global/03ab0469-861e-4fcf-9d9b-a4823b7a45f3/obsider.png?v=1674697262541"
+      alt="obsider.png"
+    />
+    <p>Hey there, friend! Welcome to Obsider.</p>
+
+    <div style="text-align: center">
+      
+      <br /><br />
+      <video id="video1" width="720">
+        <source
+          src="https://cdn.glitch.global/03ab0469-861e-4fcf-9d9b-a4823b7a45f3/testing%20obsider.mp4?v=1674699225131"
+          type="video/mp4"
+        />
+        Your browser does not support HTML video.
+      </video>
+    </div>
+
+    <script>
+      var myVideo = document.getElementById("video1");
+
+      function playPause() {
+        if (myVideo.paused) myVideo.play();
+        else myVideo.pause();
+      }
+
+      function makeBig() {
+        myVideo.width = 1280;
+      }
+
+      function makeNormal() {
+        myVideo.width = 720;
+      }
+    </script>
+<div style="text-align: center">
+      <button onclick="playPause()"><span class="material-symbols-outlined">
+play_arrow
+</span></button>
+      <button onclick="makeBig()"><span class="material-symbols-outlined">
+open_in_full
+</span></button>
+      <button onclick="makeNormal()"><span class="material-symbols-outlined">
+close_fullscreen
+</span></button> 
+
+    </div>
+    <p>
+      Video courtesy of
+      <a href="https://www.youtube.com/watch?v=_SzGQkI-IwM" target="_blank"
+        >TechDannis</a
+      >.
+    </p>
+  </body>
+</html>
